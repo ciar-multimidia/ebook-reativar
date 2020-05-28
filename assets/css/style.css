@@ -1,0 +1,384 @@
+/****************************************
+ * ANULAR PADROES DE NAVEGADOR *
+ ****************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, p {
+  display: block;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+mark {
+  background: none;
+  color: inherit;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("subset-Raleway-BoldItalic.woff2") format("woff2"), url("subset-Raleway-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("subset-Raleway-Regular.woff2") format("woff2"), url("subset-Raleway-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("subset-Raleway-MediumItalic.woff2") format("woff2"), url("subset-Raleway-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("subset-Raleway-Bold.woff2") format("woff2"), url("subset-Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("subset-Raleway-Italic.woff2") format("woff2"), url("subset-Raleway-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("subset-Raleway-Medium.woff2") format("woff2"), url("subset-Raleway-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+/****************************************
+ * DEFINICOES E FORMATACOES DE TEXTO *
+ ****************************************/
+a:link, a:visited, a:active, a:focus {
+  outline: 0;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+a:focus {
+  font-weight: bold;
+}
+
+b, strong {
+  font-weight: bold;
+  color: inherit;
+}
+
+u {
+  text-decoration: underline;
+}
+
+i, em {
+  color: inherit;
+  font-style: italic;
+}
+
+s, del {
+  text-decoration: line-through;
+}
+
+p, article ul, article ol, blockquote, figure {
+  margin-bottom: 1.8em;
+}
+
+small {
+  font-size: 80%;
+}
+
+center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.3;
+  display: block;
+  color: inherit;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+h1 article {
+  font-size: 1.9em;
+}
+@media (max-width: 680px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h1 article {
+    font-size: 1.7em;
+  }
+}
+
+h2 {
+  font-size: 1.7em;
+}
+@media (max-width: 680px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+h3 {
+  font-size: 1.4em;
+}
+@media (max-width: 680px) {
+  h3 {
+    font-size: 1.25em;
+  }
+}
+
+h4 {
+  font-size: 1.25em;
+}
+@media (max-width: 680px) {
+  h4 {
+    font-size: 1.2em;
+  }
+}
+
+h5 {
+  font-size: 1.1em;
+}
+@media (max-width: 680px) {
+  h5 {
+    font-size: 1em;
+  }
+}
+
+h6 {
+  font-size: 1em;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #212121;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  background-color: #FFF;
+}
+
+.headerportal {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/bg_portal.svg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.titulo_portal {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 1.2;
+  color: white;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.botoes_portal {
+  display: block;
+  text-align: center;
+}
+.botoes_portal a {
+  background-color: #FFF;
+  display: inline-block;
+  width: 265px;
+  height: 265px;
+  margin: 20px 20px 0 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+.botoes_portal a:nth-child(1) svg {
+  margin-top: 45px;
+}
+.botoes_portal a:nth-child(1) svg path {
+  fill: #821f81;
+}
+.botoes_portal a:nth-child(1):hover {
+  background: #821f81;
+}
+.botoes_portal a:nth-child(2) svg {
+  margin-top: 45px;
+}
+.botoes_portal a:nth-child(2) svg path {
+  fill: #02969c;
+}
+.botoes_portal a:nth-child(2):hover {
+  background: #02969c;
+}
+.botoes_portal a svg {
+  width: 75%;
+  display: inline-block;
+  position: relative;
+}
+.botoes_portal a svg path {
+  transition: fill 0.2s ease-in-out;
+}
+.botoes_portal a:hover svg path {
+  fill: #FFF;
+}
+.botoes_portal .marcas {
+  margin-top: 150px;
+}
+.botoes_portal .marcas img {
+  width: 490px;
+}
+.botoes_portal .headerindex {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/bg_index1.svg);
+  background-size: cover;
+  background-position: center top;
+}
+.botoes_portal .tituloum {
+  padding-top: 110px;
+  display: block;
+}
+.botoes_portal .tituloum img {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.botoes_portal .titulodois {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.2;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.botoes_portal .autor {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.2;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.botoes_portal .botoes_index {
+  display: block;
+  text-align: center;
+}
+.botoes_portal .botoes_index a {
+  font-family: "Raleway", sans-serif;
+  background-color: #b20f62;
+  font-weight: bold;
+  display: inline-block;
+  color: #FFF;
+  width: 90px;
+  height: 90px;
+  margin: 20px 20px 0 30px;
+  font-size: 0.75em;
+  border-radius: 50%;
+  text-align: center;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.botoes_portal .botoes_index a:hover {
+  color: #b20f62;
+  background-color: #FFF;
+}
+.botoes_portal .botoes_index a span {
+  display: inline-block;
+  position: relative;
+  margin-top: 23px;
+}
+
+#fichatecnica {
+  margin-left: 140px;
+  width: 50%;
+}
+#fichatecnica h1, #fichatecnica h2, #fichatecnica h3 {
+  color: #b20f62;
+  padding: 40px 0 0 0;
+}
+#fichatecnica h4 {
+  color: #212121;
+  padding: 15px 0 0 0;
+}
+#fichatecnica p {
+  color: #212121;
+  padding-bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

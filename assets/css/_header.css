@@ -1,0 +1,48 @@
+.headerportal {
+  width: 100%;
+  padding-top: 400px;
+  background-image: url(../img/bg_portal.svg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.headerindex {
+  width: 100%;
+  background-image: url(../img/bg_index1.svg);
+  background-size: cover;
+  background-position: top center;
+}
+
+.tituloum img {
+  width: 600px;
+  position: center;
+}
+
+.titulodois {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 3.5em;
+  color: white;
+  text-align: center;
+}
+
+.botoes_index a {
+  font-family: Raleway;
+  background-color: #b20f62;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+  box-shadow: 0 2px 0 0 white;
+  padding: 10px 15px;
+  margin: 20px 20px 0 30px;
+  font-size: 1.3em;
+}
+.botoes_index a:nth-child(2) {
+  margin-left: 15px;
+}
+.botoes_index a:hover {
+  color: #b20f62;
+  background-color: white;
+}
+
+/*# sourceMappingURL=_header.css.map */

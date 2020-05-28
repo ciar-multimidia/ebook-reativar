@@ -1,0 +1,150 @@
+//HEADER_PORTAL//
+
+.headerportal {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../img/bg_portal.svg);
+	background-size: cover;
+	background-position: center top;
+}
+
+.titulo_portal {
+	font-family: $fonte;
+	font-weight: normal;
+	font-size: 3em;
+	line-height: 1.2;
+	color: white;
+	display: block;
+	// margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.botoes_portal {
+display: block;
+text-align: center;
+a { 	
+	background-color: $branco;
+	display: inline-block;
+	width: 265px;
+	height: 265px;
+	margin: 20px 20px 0 30px;
+	border-radius: 50%;
+	text-align: center;
+	&:nth-child(1) {
+		svg {
+			margin-top: 45px;
+			path {
+				fill: $roxo;
+			}
+		}
+		&:hover {
+		background: $roxo;
+		}
+	}
+	&:nth-child(2) {
+		svg {
+			margin-top: 45px;
+			path {
+				fill: $turquesa;
+			}
+		}
+		&:hover {
+		background: $turquesa;
+		}
+	}
+	svg {
+		width: 75%;
+		display: inline-block;
+		position: relative;
+		
+		path {
+			transition: fill 0.2s ease-in-out;
+		}
+	}
+	&:hover {
+		svg path{
+			fill: $branco;
+		}
+	}
+}
+
+.marcas {
+	margin-top: 150px;
+	img {width: 490px;
+	}
+}
+
+
+
+//HEADER_CAPA//
+
+.headerindex {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../img/bg_index1.svg);
+	background-size: cover;
+	background-position: center top;
+}
+
+.tituloum {
+	padding-top: 110px;
+	display: block;
+	img {width: 300px;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.titulodois {
+	font-family: $fonte;
+	font-weight: normal;
+	font-size: 1.2em;
+	line-height: 1.2;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.autor {
+	font-family: $fonte;
+	font-weight: normal;
+	font-size: 0.75em;
+	line-height: 1.2;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.botoes_index {
+	display: block;
+	text-align: center;
+	a { 	
+		font-family: $fonte;
+		background-color: $rosa;
+		font-weight: bold;
+		display: inline-block;
+		color: $branco;
+		width: 90px;
+		height: 90px;
+		margin: 20px 20px 0 30px;
+		font-size: 0.75em;
+		border-radius: 50%;
+		text-align: center;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		&:hover {
+			color: $rosa;
+			background-color: $branco;
+		}
+		span {
+			display: inline-block;
+			position: relative;
+			margin-top: 23px;
+			}
+		}
+	}
+}
+
+
