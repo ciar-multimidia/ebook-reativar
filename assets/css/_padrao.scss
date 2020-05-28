@@ -18,6 +18,21 @@ $sidebar: 300px;
 
 $artigo: 800px;
 
+//CONTAINER//
+.container {
+	margin: 0 auto;
+	width: $container;
+	@media (max-width: $container) {
+		width: 100%;
+	}
+	@media (max-width: $tablet) {
+		width: 100%;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+	}	
+}
+
 /****************************************
  * DEFINICOES E FORMATACOES DE TEXTO *
  ****************************************/
