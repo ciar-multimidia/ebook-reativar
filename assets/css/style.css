@@ -404,6 +404,7 @@ body.livro2 .headerconteudo {
   height: 140px;
   background-size: cover;
   background-position: center top;
+  display: inline-block;
 }
 .headerconteudo span {
   font-size: 0.6em;
@@ -415,8 +416,9 @@ body.livro2 .headerconteudo {
 }
 .headerconteudo .menu {
   float: right;
-  width: 50px;
-  display: inline-block;
+  width: 40px;
+  padding-bottom: 50px;
+  margin-top: -38px;
 }
 
 .fichalivro {
