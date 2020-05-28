@@ -1,11 +1,45 @@
 // FICHA TÉCNICA //
 
-.fichatecnica {
-	padding: 150px 0;
+.fichalivro {
+	margin: 100px 0;
+		h3 {
+			margin-bottom: 1em;
+		}
+	& > div {
+		width: 48%;
+		float: left;
+	}
 }
 
-.fichalivro1 {
-		h2 {
-			color: $rosa;
-		}
+// ISBN //
+
+#linha {
+	border-top: 2px solid $cinza;
+	padding-top: 70px;
+	p {
+		font-size: 0.8em;
 	}
+}
+
+.isbn {
+	border: 1px solid $cinza;
+	padding: 25px;
+	width: 70%;
+	margin: 0 auto 15px auto;
+	.dados {
+		width: 60px;
+		float: left;
+	}
+	.info {
+		float: right;
+		width: calc(100% - 60px);
+	}
+}
+
+.marcas {
+	// margin: 50px auto 40px auto;
+	align: center; 
+	img {width: 400px;
+	}
+}
+

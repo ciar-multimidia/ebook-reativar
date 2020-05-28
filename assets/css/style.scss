@@ -14,6 +14,18 @@ body {
 	// letter-spacing: 0.04em;
 	position: relative;
 	background-color: $branco;
+
+	&.livro1 {
+		.fichalivro h3 {
+			color: $rosa;
+		}
+	}
+
+	&.livro2 {
+		.fichalivro h3 {
+			color: $roxo;
+		}
+	}
 }
 
 @import "header";

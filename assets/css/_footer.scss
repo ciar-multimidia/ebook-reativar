@@ -1,20 +1,27 @@
-//FOOTER_INDEX
+//FOOTER INDEX
 
-// footer {
-// 	background-color: $cinza;
-// 	color: (#FFF, 30%);
-// 	a {
-// 		color: $grafite;
-// 		&:hover {
-// 			color: $grafite;
-// 		}
-// 	}
-// }
+footer {
+	background-color: $cinza;
+	color: &preto;
+	a {
+		color: $preto;
+		&:hover {
+			color: $rosa;
+		}
+	}
+}
 
-// .footer_index {
-// 	text-align: center;
-// 	font-size: 0.9em;
-// 	padding: 30px;
-// 	width: 60%;
-// 	margin: 0 auto;
-// 	}
+.footer_index {
+	text-align: center;
+	font-size: 0.7em;
+	padding: 30px;
+	width: 60%;
+	margin: 0 auto;
+	@media (max-width: $tablet) {
+		width: 80%;
+	}
+	@media (max-width: $celular) {
+		width: 100%;
+		padding: 30px 15px 15px 15px;
+	}
+}

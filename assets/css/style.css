@@ -115,16 +115,6 @@ img {
     width: 100%;
   }
 }
-@media (max-width: 990px) {
-  .container {
-    width: 100%;
-  }
-}
-@media (max-width: 380px) {
-  .container {
-    width: 100%;
-  }
-}
 
 /****************************************
  * DEFINICOES E FORMATACOES DE TEXTO *
@@ -160,7 +150,7 @@ s, del {
 }
 
 p, article ul, article ol, blockquote, figure {
-  margin-bottom: 1.8em;
+  margin-bottom: 1em;
 }
 
 small {
@@ -234,6 +224,14 @@ h5 {
   }
 }
 
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 body, html {
   overflow-x: hidden;
 }
@@ -247,6 +245,12 @@ body {
   font-family: "Raleway", sans-serif;
   position: relative;
   background-color: #FFF;
+}
+body.livro1 .fichalivro h3 {
+  color: #b20f62;
+}
+body.livro2 .fichalivro h3 {
+  color: #821f81;
 }
 
 .headerportal {
@@ -388,12 +392,75 @@ body {
   margin-top: 23px;
 }
 
-.fichatecnica {
-  padding: 150px 0;
+.fichalivro {
+  margin: 100px 0;
+}
+.fichalivro h3 {
+  margin-bottom: 1em;
+}
+.fichalivro > div {
+  width: 48%;
+  float: left;
 }
 
-.fichalivro1 h2 {
+#linha {
+  border-top: 2px solid #dedede;
+  padding-top: 70px;
+}
+#linha p {
+  font-size: 0.8em;
+}
+
+.isbn {
+  border: 1px solid #dedede;
+  padding: 25px;
+  width: 70%;
+  margin: 0 auto 15px auto;
+}
+.isbn .dados {
+  width: 60px;
+  float: left;
+}
+.isbn .info {
+  float: right;
+  width: calc(100% - 60px);
+}
+
+.marcas {
+  align: center;
+}
+.marcas img {
+  width: 400px;
+}
+
+footer {
+  background-color: #dedede;
+  color: footer preto;
+}
+footer a {
+  color: #212121;
+}
+footer a:hover {
   color: #b20f62;
+}
+
+.footer_index {
+  text-align: center;
+  font-size: 0.7em;
+  padding: 30px;
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 990px) {
+  .footer_index {
+    width: 80%;
+  }
+}
+@media (max-width: 380px) {
+  .footer_index {
+    width: 100%;
+    padding: 30px 15px 15px 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
