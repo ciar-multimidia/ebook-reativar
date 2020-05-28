@@ -107,7 +107,7 @@ img {
   font-style: normal;
 }
 .container {
-  margin: 100px auto;
+  margin: 0 auto;
   width: 1180px;
 }
 @media (max-width: 1180px) {
@@ -255,6 +255,9 @@ body.livro1 .headerconteudo {
 body.livro2 .fichalivro h3 {
   color: #821f81;
 }
+body.livro2 .headerconteudo {
+  background-image: url(../img/topobg2.svg);
+}
 
 .headerportal {
   width: 100%;
@@ -396,12 +399,29 @@ body.livro2 .fichalivro h3 {
 }
 
 .headerconteudo {
+  padding: 15px 0;
   width: 100%;
-  margin-top: 0;
+  height: 140px;
   background-size: cover;
   background-position: center top;
 }
+.headerconteudo span {
+  font-size: 0.6em;
+  color: #FFF;
+}
+.headerconteudo h1 {
+  padding-top: 30px;
+  color: #FFF;
+}
+.headerconteudo .menu {
+  float: right;
+  width: 50px;
+  display: inline-block;
+}
 
+.fichalivro {
+  margin-top: 100px;
+}
 .fichalivro h3 {
   margin-bottom: 1em;
 }
