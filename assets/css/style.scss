@@ -17,7 +17,10 @@ body {
 
 	&.livro1 {
 		.fichalivro h3 {
-			color: $rosa;
+			color: $rosa;	
+		}
+		.headerconteudo {
+			background-image: url(../img/topobg1.svg);
 		}
 	}
 

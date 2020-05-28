@@ -4,7 +4,8 @@ $preto: #212121;
 $rosa: #b20f62;
 $roxo: #821f81;
 $turquesa: #02969c;
-$cinza: #dedede;
+$cinza: #f6f6f6;
+$cinzaescuro: #dedede;
 
 // FONTES
 $fonte: 'Raleway',sans-serif;
@@ -21,7 +22,7 @@ $artigo: 800px;
 
 //CONTAINER//
 .container {
-	margin: 0 auto;
+	margin: 100px auto;
 	width: $container;
 	@media (max-width: $container) {
 		width: 100%;

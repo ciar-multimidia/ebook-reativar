@@ -107,7 +107,7 @@ img {
   font-style: normal;
 }
 .container {
-  margin: 0 auto;
+  margin: 100px auto;
   width: 1180px;
 }
 @media (max-width: 1180px) {
@@ -249,6 +249,9 @@ body {
 body.livro1 .fichalivro h3 {
   color: #b20f62;
 }
+body.livro1 .headerconteudo {
+  background-image: url(../img/topobg1.svg);
+}
 body.livro2 .fichalivro h3 {
   color: #821f81;
 }
@@ -345,7 +348,7 @@ body.livro2 .fichalivro h3 {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 1.2em;
-  line-height: 1.2;
+  line-height: 1.4;
   color: white;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -356,7 +359,7 @@ body.livro2 .fichalivro h3 {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 0.75em;
-  line-height: 1.2;
+  line-height: 1.4;
   color: white;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -375,7 +378,7 @@ body.livro2 .fichalivro h3 {
   color: #FFF;
   width: 90px;
   height: 90px;
-  margin: 20px 20px 0 30px;
+  margin: 30px 20px 0 30px;
   font-size: 0.75em;
   border-radius: 50%;
   text-align: center;
@@ -392,9 +395,13 @@ body.livro2 .fichalivro h3 {
   margin-top: 23px;
 }
 
-.fichalivro {
-  margin: 100px 0;
+.headerconteudo {
+  width: 100%;
+  margin-top: 0;
+  background-size: cover;
+  background-position: center top;
 }
+
 .fichalivro h3 {
   margin-bottom: 1em;
 }
@@ -427,37 +434,35 @@ body.livro2 .fichalivro h3 {
 }
 
 .marcas {
-  align: center;
-}
-.marcas img {
   width: 400px;
+  margin: 50px auto 50px auto;
 }
 
 footer {
-  background-color: #dedede;
+  background-color: #f6f6f6;
   color: footer preto;
 }
-footer a {
-  color: #212121;
-}
-footer a:hover {
-  color: #b20f62;
-}
 
-.footer_index {
+.footer_capas {
   text-align: center;
   font-size: 0.7em;
   padding: 30px;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
+.footer_capas a {
+  color: #212121;
+}
+.footer_capas a:hover {
+  color: #b20f62;
+}
 @media (max-width: 990px) {
-  .footer_index {
+  .footer_capas {
     width: 80%;
   }
 }
 @media (max-width: 380px) {
-  .footer_index {
+  .footer_capas {
     width: 100%;
     padding: 30px 15px 15px 15px;
   }
