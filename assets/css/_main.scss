@@ -1,3 +1,19 @@
+// TEXTO CAPA PORTAL //
+
+.release {
+	margin: 100px auto;
+	width: 70%;
+	h2 {
+		color: $rosa;
+		padding-bottom: 30px;
+	}
+
+
+
+}
+
+
+
 // FICHA TÉCNICA //
 
 .fichalivro {
@@ -45,7 +61,7 @@ a.iniciarebook {
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
-	color: $branco;
+	color: $branco !important;
 	font-weight: bold;
 	display: block;
 	margin: 30px auto;
@@ -72,7 +88,68 @@ a.iniciarebook {
 	}
 	&:hover {
 		background: $branco !important;
-
 	}
 }
+
+
+//CONTEUDO//
+
+article {
+	padding: 100px 0;
+	width: 70%;
+	a {
+		font-weight: 500;
+	}
+}
+
+//PAGINACAO//
+
+.pagina {
+	color: $cinzaescuro;
+	font-size: 1em;
+	font-style: italic;
+	text-align: right;
+	display: block;
+	border-bottom: 1px solid $cinza;
+	margin-bottom: 30px;
+}
+
+// DIALOGOS//
+
+p.dialogo {
+	margin-left: 100px;
+}
+
+//CITACAO//
+
+blockquote {
+	font-size: 0.9em;
+	font-style: italic;
+	padding-left: 100px;
+	width: 90%;
+}
+
+//IMAGENS//
+
+img {
+	width: 100%;
+	margin: 50px 0 20px 0;
+}
+
+figcaption {
+	font-size: 0.9em;
+
+}
+
+
+//SUMARIO//
+
+
+
+
+
+
+
+
+
 

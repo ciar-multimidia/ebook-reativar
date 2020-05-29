@@ -7,7 +7,7 @@ body, html {overflow-x: hidden;}
 body {
 	font-weight: normal;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.7;
 	color: $preto;
 	font-family: $fonte;
@@ -16,6 +16,17 @@ body {
 	background-color: $branco;
 
 	&.livro1 {
+		article {
+			h1, h2, h3, h4, h5 {
+				color: $rosa;
+			}
+			p.dialogo {
+				color: $rosa;
+			}
+			a {
+				color: $rosa;
+			}
+		}
 		.fichalivro h3 { color: $rosa; }
 		.headerconteudo {
 			background-image: url(../img/topobg1.svg);
@@ -23,7 +34,7 @@ body {
 		a.iniciarebook {
 			background: $rosa;
 			border-color: $rosa;
-			&:hover { color: $rosa; }
+			&:hover { color: $rosa !important; }
 			&:before { background: $rosa; }
 		}
 		.footerconteudo .container { 
@@ -45,16 +56,23 @@ body {
 				height: 30px;
 			}
 		}
-
 	}
 
 	&.livro2 {
+		article {
+			h1, h2, h3, h4, h5 {
+				color: $roxo;
+			}
+		p.dialogo {
+				color: $roxo;
+			}
+		}
 		.fichalivro h3 { color: $roxo; }
 		.headerconteudo { background-image: url(../img/topobg2.svg); }
 		a.iniciarebook {
 			background: $roxo;
 			border-color: $roxo;
-			&:hover { color: $roxo; }
+			&:hover { color: $roxo !important; }
 			&:before { background: $roxo; }
 		}
 		.footerconteudo .container{ 

@@ -239,12 +239,21 @@ body, html {
 body {
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
   color: #212121;
   font-family: "Raleway", sans-serif;
   position: relative;
   background-color: #FFF;
+}
+body.livro1 article h1, body.livro1 article h2, body.livro1 article h3, body.livro1 article h4, body.livro1 article h5 {
+  color: #b20f62;
+}
+body.livro1 article p.dialogo {
+  color: #b20f62;
+}
+body.livro1 article a {
+  color: #b20f62;
 }
 body.livro1 .fichalivro h3 {
   color: #b20f62;
@@ -257,7 +266,7 @@ body.livro1 a.iniciarebook {
   border-color: #b20f62;
 }
 body.livro1 a.iniciarebook:hover {
-  color: #b20f62;
+  color: #b20f62 !important;
 }
 body.livro1 a.iniciarebook:before {
   background: #b20f62;
@@ -280,6 +289,12 @@ body.livro1 .footerconteudo .container a.sumariofooter a.anterior {
   width: 30px;
   height: 30px;
 }
+body.livro1.livro2 article h1, body.livro1.livro2 article h2, body.livro1.livro2 article h3, body.livro1.livro2 article h4, body.livro1.livro2 article h5 {
+  color: #821f81;
+}
+body.livro1.livro2 article p.dialogo {
+  color: #821f81;
+}
 body.livro1.livro2 .fichalivro h3 {
   color: #821f81;
 }
@@ -291,7 +306,7 @@ body.livro1.livro2 a.iniciarebook {
   border-color: #821f81;
 }
 body.livro1.livro2 a.iniciarebook:hover {
-  color: #821f81;
+  color: #821f81 !important;
 }
 body.livro1.livro2 a.iniciarebook:before {
   background: #821f81;
@@ -467,6 +482,14 @@ body .headerconteudo .menu {
   padding-bottom: 50px;
   margin-top: -38px;
 }
+body .release {
+  margin: 100px auto;
+  width: 70%;
+}
+body .release h2 {
+  color: #b20f62;
+  padding-bottom: 30px;
+}
 body .fichalivro {
   padding-top: 100px;
 }
@@ -478,14 +501,14 @@ body .fichalivro > div {
   float: left;
 }
 body #linha {
-  border-top: 2px solid #dedede;
+  border-top: 2px solid #cecece;
   padding-top: 70px;
 }
 body #linha p {
   font-size: 0.8em;
 }
 body .isbn {
-  border: 1px solid #dedede;
+  border: 1px solid #cecece;
   padding: 25px;
   width: 70%;
   margin: 0 auto 15px auto;
@@ -506,7 +529,7 @@ body a.iniciarebook {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  color: #FFF;
+  color: #FFF !important;
   font-weight: bold;
   display: block;
   margin: 30px auto;
@@ -534,6 +557,38 @@ body a.iniciarebook:before {
 }
 body a.iniciarebook:hover {
   background: #FFF !important;
+}
+body article {
+  padding: 100px 0;
+  width: 70%;
+}
+body article a {
+  font-weight: 500;
+}
+body .pagina {
+  color: #cecece;
+  font-size: 1em;
+  font-style: italic;
+  text-align: right;
+  display: block;
+  border-bottom: 1px solid #f6f6f6;
+  margin-bottom: 30px;
+}
+body p.dialogo {
+  margin-left: 100px;
+}
+body blockquote {
+  font-size: 0.9em;
+  font-style: italic;
+  padding-left: 100px;
+  width: 90%;
+}
+body img {
+  width: 100%;
+  margin: 50px 0 20px 0;
+}
+body figcaption {
+  font-size: 0.9em;
 }
 body footer {
   background-color: #f6f6f6;
