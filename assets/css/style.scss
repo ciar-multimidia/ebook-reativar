@@ -16,20 +16,66 @@ body {
 	background-color: $branco;
 
 	&.livro1 {
-		.fichalivro h3 {
-			color: $rosa;	
-		}
+		.fichalivro h3 { color: $rosa; }
 		.headerconteudo {
 			background-image: url(../img/topobg1.svg);
 		}
+		a.iniciarebook {
+			background: $rosa;
+			border-color: $rosa;
+			&:hover { color: $rosa; }
+			&:before { background: $rosa; }
+		}
+		.footerconteudo .container { 
+			a.sumariofooter { 
+				color: $rosa; 
+				&:hover { 
+					color: $roxo;
+				}
+			a.proximo {
+				border-radius: 50%;
+				background: $rosa;
+				width: 30px;
+				height: 30px;
+			}
+			a.anterior {
+				border-radius: 50%;
+				background: $rosa;
+				width: 30px;
+				height: 30px;
+			}
+		}
+
 	}
 
 	&.livro2 {
-		.fichalivro h3 {
-			color: $roxo;
+		.fichalivro h3 { color: $roxo; }
+		.headerconteudo { background-image: url(../img/topobg2.svg); }
+		a.iniciarebook {
+			background: $roxo;
+			border-color: $roxo;
+			&:hover { color: $roxo; }
+			&:before { background: $roxo; }
 		}
-		.headerconteudo {
-			background-image: url(../img/topobg2.svg);
+		.footerconteudo .container{ 
+			a.sumariofooter { 
+				color: $roxo; 
+				&:hover { 
+					color: $rosa;
+				}
+			}
+			a.proximo {
+				border-radius: 50%;
+				background: $roxo;
+				width: 30px;
+				height: 30px;
+			}
+			a.anterior {
+				border-radius: 50%;
+				background: $roxo;
+				width: 30px;
+				height: 30px;
+			}
 		}
 	}
 }
@@ -37,4 +83,4 @@ body {
 @import "header";
 @import "main";
 @import "footer";
-@import "print";
+@import "print"; }

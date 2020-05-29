@@ -1,7 +1,7 @@
 // FICHA TÉCNICA //
 
 .fichalivro {
-	margin-top: 100px;
+	padding-top: 100px;
 		h3 {
 			margin-bottom: 1em;
 		}
@@ -39,5 +39,40 @@
 .marcas {
 	width: 400px;
 	margin: 50px auto 50px auto;
+}
+
+a.iniciarebook {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	color: $branco;
+	font-weight: bold;
+	display: block;
+	margin: 30px auto;
+	position: relative;
+	text-align: center;
+	border: 2px solid;
+	transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+	span {
+		position: absolute;
+		display: block;
+		top: 50%;
+	    width: 100%;
+	    transform: translateY(-50%);
+	}
+	&:before {
+		content: "";
+		width: 315px;
+		height: 5px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: -1;
+	}
+	&:hover {
+		background: $branco !important;
+
+	}
 }
 

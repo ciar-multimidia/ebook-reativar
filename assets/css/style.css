@@ -252,22 +252,76 @@ body.livro1 .fichalivro h3 {
 body.livro1 .headerconteudo {
   background-image: url(../img/topobg1.svg);
 }
-body.livro2 .fichalivro h3 {
+body.livro1 a.iniciarebook {
+  background: #b20f62;
+  border-color: #b20f62;
+}
+body.livro1 a.iniciarebook:hover {
+  color: #b20f62;
+}
+body.livro1 a.iniciarebook:before {
+  background: #b20f62;
+}
+body.livro1 .footerconteudo .container a.sumariofooter {
+  color: #b20f62;
+}
+body.livro1 .footerconteudo .container a.sumariofooter:hover {
   color: #821f81;
 }
-body.livro2 .headerconteudo {
+body.livro1 .footerconteudo .container a.sumariofooter a.proximo {
+  border-radius: 50%;
+  background: #b20f62;
+  width: 30px;
+  height: 30px;
+}
+body.livro1 .footerconteudo .container a.sumariofooter a.anterior {
+  border-radius: 50%;
+  background: #b20f62;
+  width: 30px;
+  height: 30px;
+}
+body.livro1.livro2 .fichalivro h3 {
+  color: #821f81;
+}
+body.livro1.livro2 .headerconteudo {
   background-image: url(../img/topobg2.svg);
 }
-
-.headerportal {
+body.livro1.livro2 a.iniciarebook {
+  background: #821f81;
+  border-color: #821f81;
+}
+body.livro1.livro2 a.iniciarebook:hover {
+  color: #821f81;
+}
+body.livro1.livro2 a.iniciarebook:before {
+  background: #821f81;
+}
+body.livro1.livro2 .footerconteudo .container a.sumariofooter {
+  color: #821f81;
+}
+body.livro1.livro2 .footerconteudo .container a.sumariofooter:hover {
+  color: #b20f62;
+}
+body.livro1.livro2 .footerconteudo .container a.proximo {
+  border-radius: 50%;
+  background: #821f81;
+  width: 30px;
+  height: 30px;
+}
+body.livro1.livro2 .footerconteudo .container a.anterior {
+  border-radius: 50%;
+  background: #821f81;
+  width: 30px;
+  height: 30px;
+}
+body .headerportal {
   width: 100%;
   min-height: 100vh;
   background-image: url(../img/bg_portal.svg);
   background-size: cover;
   background-position: center top;
 }
-
-.titulo_portal {
+body .titulo_portal {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 3em;
@@ -277,12 +331,11 @@ body.livro2 .headerconteudo {
   margin-bottom: 30px;
   text-align: center;
 }
-
-.botoes_portal {
+body .botoes_portal {
   display: block;
   text-align: center;
 }
-.botoes_portal a {
+body .botoes_portal a {
   background-color: #FFF;
   display: inline-block;
   width: 265px;
@@ -292,62 +345,58 @@ body.livro2 .headerconteudo {
   text-align: center;
   vertical-align: middle;
 }
-.botoes_portal a:nth-child(1) svg {
+body .botoes_portal a:nth-child(1) svg {
   margin-top: 45px;
 }
-.botoes_portal a:nth-child(1) svg path {
+body .botoes_portal a:nth-child(1) svg path {
   fill: #821f81;
 }
-.botoes_portal a:nth-child(1):hover {
+body .botoes_portal a:nth-child(1):hover {
   background: #821f81;
 }
-.botoes_portal a:nth-child(2) svg {
+body .botoes_portal a:nth-child(2) svg {
   margin-top: 45px;
 }
-.botoes_portal a:nth-child(2) svg path {
+body .botoes_portal a:nth-child(2) svg path {
   fill: #02969c;
 }
-.botoes_portal a:nth-child(2):hover {
+body .botoes_portal a:nth-child(2):hover {
   background: #02969c;
 }
-.botoes_portal a svg {
+body .botoes_portal a svg {
   width: 75%;
   display: inline-block;
   position: relative;
 }
-.botoes_portal a svg path {
+body .botoes_portal a svg path {
   transition: fill 0.2s ease-in-out;
 }
-.botoes_portal a:hover svg path {
+body .botoes_portal a:hover svg path {
   fill: #FFF;
 }
-
-.marcas {
+body .marcas {
   margin-top: 150px;
 }
-.marcas img {
+body .marcas img {
   width: 400px;
 }
-
-.headerindex {
+body .headerindex {
   width: 100%;
   min-height: 100vh;
   background-image: url(../img/bg_index1.svg);
   background-size: cover;
   background-position: center top;
 }
-
-.tituloum {
+body .tituloum {
   padding-top: 110px;
   display: block;
 }
-.tituloum img {
+body .tituloum img {
   width: 300px;
   display: block;
   margin: 0 auto;
 }
-
-.titulodois {
+body .titulodois {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 1.2em;
@@ -357,8 +406,7 @@ body.livro2 .headerconteudo {
   margin-bottom: 30px;
   text-align: center;
 }
-
-.autor {
+body .autor {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 0.75em;
@@ -368,12 +416,11 @@ body.livro2 .headerconteudo {
   margin-bottom: 30px;
   text-align: center;
 }
-
-.botoes_index {
+body .botoes_index {
   display: block;
   text-align: center;
 }
-.botoes_index a {
+body .botoes_index a {
   font-family: "Raleway", sans-serif;
   background-color: #b20f62;
   font-weight: bold;
@@ -388,17 +435,16 @@ body.livro2 .headerconteudo {
   vertical-align: middle;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-.botoes_index a:hover {
+body .botoes_index a:hover {
   color: #b20f62;
   background-color: #FFF;
 }
-.botoes_index a span {
+body .botoes_index a span {
   display: inline-block;
   position: relative;
   margin-top: 23px;
 }
-
-.headerconteudo {
+body .headerconteudo {
   padding: 15px 0;
   width: 100%;
   height: 140px;
@@ -406,88 +452,140 @@ body.livro2 .headerconteudo {
   background-position: center top;
   display: inline-block;
 }
-.headerconteudo span {
+body .headerconteudo span {
+  font-family: Arial, sans-serif;
   font-size: 0.6em;
   color: #FFF;
 }
-.headerconteudo h1 {
+body .headerconteudo h1 {
   padding-top: 30px;
   color: #FFF;
 }
-.headerconteudo .menu {
+body .headerconteudo .menu {
   float: right;
   width: 40px;
   padding-bottom: 50px;
   margin-top: -38px;
 }
-
-.fichalivro {
-  margin-top: 100px;
+body .fichalivro {
+  padding-top: 100px;
 }
-.fichalivro h3 {
+body .fichalivro h3 {
   margin-bottom: 1em;
 }
-.fichalivro > div {
+body .fichalivro > div {
   width: 48%;
   float: left;
 }
-
-#linha {
+body #linha {
   border-top: 2px solid #dedede;
   padding-top: 70px;
 }
-#linha p {
+body #linha p {
   font-size: 0.8em;
 }
-
-.isbn {
+body .isbn {
   border: 1px solid #dedede;
   padding: 25px;
   width: 70%;
   margin: 0 auto 15px auto;
 }
-.isbn .dados {
+body .isbn .dados {
   width: 60px;
   float: left;
 }
-.isbn .info {
+body .isbn .info {
   float: right;
   width: calc(100% - 60px);
 }
-
-.marcas {
+body .marcas {
   width: 400px;
   margin: 50px auto 50px auto;
 }
-
-footer {
-  background-color: #f6f6f6;
-  color: footer preto;
+body a.iniciarebook {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  color: #FFF;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  position: relative;
+  text-align: center;
+  border: 2px solid;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
-.footer_capas {
+body a.iniciarebook span {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+body a.iniciarebook:before {
+  content: "";
+  width: 315px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+body a.iniciarebook:hover {
+  background: #FFF !important;
+}
+body footer {
+  background-color: #f6f6f6;
+  color: body footer preto;
+}
+body .footer_capas {
   text-align: center;
   font-size: 0.7em;
   padding: 30px;
   width: 50%;
   margin: 0 auto;
 }
-.footer_capas a {
+body .footer_capas a {
   color: #212121;
 }
-.footer_capas a:hover {
+body .footer_capas a:hover {
   color: #b20f62;
 }
 @media (max-width: 990px) {
-  .footer_capas {
+  body .footer_capas {
     width: 80%;
   }
 }
 @media (max-width: 380px) {
-  .footer_capas {
+  body .footer_capas {
     width: 100%;
     padding: 30px 15px 15px 15px;
   }
+}
+body .footerconteudo .container {
+  display: block;
+  text-align: center;
+  padding: 50px 0;
+}
+body .footerconteudo .container a.proximo {
+  width: 30px;
+  float: right;
+  color: #FFF;
+}
+body .footerconteudo .container a.anterior {
+  width: 30px;
+  float: left;
+  color: #FFF;
+}
+body .footerconteudo .container a.sumariofooter {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+}
+body .footerconteudo .container a.sumariofooter:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
