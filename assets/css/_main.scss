@@ -1,5 +1,9 @@
-//TEXTO CAPA PORTAL//
+/* MAIN */
+main{
+	position: relative;
+}
 
+//TEXTO CAPA PORTAL//
 .release {
 	margin: 100px auto;
 	width: 70%;
@@ -149,6 +153,68 @@ article {
 	//DIALOGOS//
 	p.dialogo {
 		margin-left: 100px;
+	}
+
+	//BOTOES NOTAS DE RODAPE//
+	button.bt-nota{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border: none;
+		background-color: black;
+		color: white;
+		padding: 2px 4px;
+		border-radius: 4px;
+		&:before{
+			content: attr(data-nota);
+		}
+	}
+}
+
+
+/* NOTAS DE RODAPE */
+
+#notas-rodape{
+	position: fixed;
+	z-index: 2;
+	right: calc(50% - #{$container / 2});
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: white;
+	width: calc(#{$container * .3} - 1em);
+	max-height: calc(100% - 4em);
+	overflow-y: auto;
+	border: 1px solid;
+	padding: 1em;
+	font-size: .8em;
+	line-height: 1.5;
+	display: none;
+	&.visivel{
+		display: block;
+	}
+	button.fechar{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin-bottom: 1em;
+		width: 1.25em;
+		height: 1.25em;
+		display: block;
+		background-color: transparent;
+		border: none;
+		background-image: url(../img/icon_fechar.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.notas{
+		div{
+			display: none;
+			text-align: justify;
+			&.atual{
+				display: block;
+			}
+		}
 	}
 }
 

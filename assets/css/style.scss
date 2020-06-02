@@ -26,6 +26,11 @@ body {
 			a {
 				color: $rosa;
 			}
+			button.bt-nota{
+				&.atual{
+					background-color: $rosa;
+				}
+			}
 		}
 		.fichalivro h3 { color: $rosa; }
 		.headerconteudo {
@@ -54,6 +59,9 @@ body {
 			}
 		}
 
+
+	}
+
 	&.livro2 {
 		article {
 			h1, h2, h3, h4, h5 {
@@ -61,6 +69,12 @@ body {
 			}
 		p.dialogo {
 				color: $roxo;
+			}
+
+			button.bt-nota{
+				&.atual{
+					background-color: $roxo;
+				}
 			}
 		}
 		.fichalivro h3 { color: $roxo; }
@@ -88,7 +102,6 @@ body {
 			}
 		}
 	}
-}
 }
 
 @import "header";
