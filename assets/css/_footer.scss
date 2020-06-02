@@ -1,4 +1,4 @@
-//FOOTER INDEX
+//FOOTER INDEX//
 
 footer {
 	background-color: $cinza;
@@ -27,21 +27,23 @@ footer {
 }
 
 
-//FOOTER CONTEUDO
+//FOOTER CONTEUDO//
 
 .footerconteudo .container {
 	display: block;
 	text-align: center;
-	padding: 50px 0;
-	a.proximo {
-		width: 30px;
-		float: right;
+	padding: 15px 0;
+	a.proximo, a.anterior {
 		color: $branco;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+	}
+	a.proximo {
+		float: right;
 	}
 	a.anterior {
-		width: 30px;
 		float: left;
-		color: $branco;
 	}
 	a.sumariofooter {
 		font-size: 1.2em;
@@ -51,5 +53,5 @@ footer {
 			text-decoration: none;
 			cursor: pointer;
 		}
-		}
 	}
+}

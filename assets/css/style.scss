@@ -43,20 +43,16 @@ body {
 				&:hover { 
 					color: $roxo;
 				}
-			a.proximo {
-				border-radius: 50%;
-				background: $rosa;
-				width: 30px;
-				height: 30px;
 			}
-			a.anterior {
-				border-radius: 50%;
-				background: $rosa;
-				width: 30px;
-				height: 30px;
+			a.proximo, a.anterior {
+				background-color: $rosa;
 			}
 		}
-	}
+		.listasumario {
+			p.paginasumario {
+				&:before, span { background-color: $rosa; }
+			}
+		}
 
 	&.livro2 {
 		article {
@@ -75,30 +71,28 @@ body {
 			&:hover { color: $roxo !important; }
 			&:before { background: $roxo; }
 		}
-		.footerconteudo .container{ 
+		.footerconteudo .container { 
 			a.sumariofooter { 
 				color: $roxo; 
 				&:hover { 
 					color: $rosa;
 				}
 			}
-			a.proximo {
-				border-radius: 50%;
-				background: $roxo;
-				width: 30px;
-				height: 30px;
+			a.proximo, a.anterior {
+				background-color: $roxo;
 			}
-			a.anterior {
-				border-radius: 50%;
-				background: $roxo;
-				width: 30px;
-				height: 30px;
+		}
+		.listasumario {
+			p.paginasumario {
+				&:before, span { background-color: $roxo; }
 			}
 		}
 	}
+}
 }
 
 @import "header";
 @import "main";
 @import "footer";
-@import "print"; }
+@import "print"; 
+@import "sumario";

@@ -1,4 +1,4 @@
-// TEXTO CAPA PORTAL //
+//TEXTO CAPA PORTAL//
 
 .release {
 	margin: 100px auto;
@@ -7,17 +7,16 @@
 		color: $rosa;
 		padding-bottom: 30px;
 	}
-
-
-
 }
 
 
 
-// FICHA TÉCNICA //
+//FICHA TÉCNICA//
+#fichatecnica {
+	padding-bottom: 0;
+}
 
 .fichalivro {
-	padding-top: 100px;
 		h3 {
 			margin-bottom: 1em;
 		}
@@ -27,7 +26,7 @@
 	}
 }
 
-// ISBN //
+//ISBN//
 
 #linha {
 	border-top: 2px solid $cinzaescuro;
@@ -97,57 +96,61 @@ a.iniciarebook {
 article {
 	padding: 100px 0;
 	width: 70%;
+
+	//LINK//
 	a {
 		font-weight: 500;
 	}
+
+	//IMAGM//
+	figcaption {
+		font-size: 0.9em;
+	}
+
+	figure {
+		margin: 50px 0 20px 0;
+		img {
+			width: 100%;	
+		}
+		&.esquerda, &.direita {
+			margin: 0;
+			width: 30%;
+			margin-bottom: 40px;
+		}
+		&.esquerda {
+			float: left;
+			margin-right: 40px;
+		}
+		&.direita {
+			float: right;
+			margin-left: 40px;
+		}
+	}
+
+	//CITACAO//
+	blockquote {
+		font-size: 0.9em;
+		font-style: italic;
+		padding-left: 100px;
+		width: 90%;
+	}
+
+	//PAGINACAO//
+	.pagina {
+		color: $cinzaescuro;
+		font-size: 1em;
+		font-style: italic;
+		text-align: right;
+		display: block;
+		border-bottom: 1px solid $cinza;
+		margin-bottom: 30px;
+	}
+
+	//DIALOGOS//
+	p.dialogo {
+		margin-left: 100px;
+	}
 }
-
-//PAGINACAO//
-
-.pagina {
-	color: $cinzaescuro;
-	font-size: 1em;
-	font-style: italic;
-	text-align: right;
-	display: block;
-	border-bottom: 1px solid $cinza;
-	margin-bottom: 30px;
-}
-
-// DIALOGOS//
-
-p.dialogo {
-	margin-left: 100px;
-}
-
-//CITACAO//
-
-blockquote {
-	font-size: 0.9em;
-	font-style: italic;
-	padding-left: 100px;
-	width: 90%;
-}
-
-//IMAGENS//
-
-img {
-	width: 100%;
-	margin: 50px 0 20px 0;
-}
-
-figcaption {
-	font-size: 0.9em;
-
-}
-
-
-//SUMARIO//
-
-
-
-
-
 
 
 

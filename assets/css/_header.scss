@@ -1,4 +1,4 @@
-//HEADER_PORTAL//
+//HEADER PORTAL//
 
 .headerportal {
 	width: 100%;
@@ -6,24 +6,47 @@
 	background-image: url(../img/bg_portal.svg);
 	background-size: cover;
 	background-position: center top;
+	.marcas {
+	margin-top: 150px;
+	img { width: 400px;
+	}
+	}
 }
 
 .titulo_portal {
-	font-family: $fonte;
-	font-weight: normal;
-	font-size: 3em;
-	line-height: 1.2;
-	color: white;
-	display: block;
-	// margin-top: 30px;
-	margin-bottom: 30px;
 	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	h1 {
+		font-size: 1em;
+		line-height: 1;
+		display: inline-block;
+		text-align: left;
+		font-family: $fonte;
+		color: white;
+		span {
+			&:first-child {
+				font-size: 1em;
+				font-weight: normal;
+			}
+			&:last-child {
+				font-size: 2.5em;
+				font-weight: bold;
+			}
+
+		}
+	}
+	a {
+		color: white;
+		font-size: 0.9em;	
+		display: block;
+		text-decoration: underline;
+	}
 }
 
 .botoes_portal {
 	display: block;
 	text-align: center;
-
 	a { 	
 		background-color: $branco;
 		display: inline-block;
@@ -73,15 +96,11 @@
 	}
 }
 
-.marcas {
-	margin-top: 150px;
-	img {width: 400px;
-	}
-}
 
 
 
-//HEADER_CAPA//
+
+//HEADER CAPA//
 
 .headerindex {
 	width: 100%;
@@ -153,7 +172,7 @@
 
 
 
-// HEADER CONTEUDO //
+//HEADER CONTEUDO//
 
 .headerconteudo {
 	padding: 15px 0;
