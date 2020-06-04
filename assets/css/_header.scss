@@ -97,9 +97,6 @@
 }
 
 
-
-
-
 //HEADER CAPA//
 
 .headerindex {
@@ -111,7 +108,7 @@
 }
 
 .tituloum {
-	padding-top: 110px;
+	padding-top: 100px;
 	display: block;
 	img {width: 300px;
 		display: block;
@@ -192,12 +189,20 @@
 		padding-top: 30px;
 		color: $branco;
 	}
-	.menu {
+	.botoes {
 		float: right;
-		width: 40px;	
 		padding-bottom: 50px;
 		margin-top: -38px;	
-	}
+		.menu {
+		display: inline-block;
+		width: 30px;	
+		}
+		.print {
+		display: inline-block;
+		padding-right: 10px;
+		width: 40px;	
+		}
+	}	
 }
 
 

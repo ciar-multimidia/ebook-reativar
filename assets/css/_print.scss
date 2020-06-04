@@ -10,14 +10,22 @@
 //text-shadow:none !important;
 }
 
+@page { 
+	margin-top: 2cm;
+	margin-left: 1.5cm;
+	margin-right: 2.5cm;
+	margin-bottom: 2.5cm;
+}
+
 //PADRAO
 
 article {
 	width: 100%;
+	padding-top: 0;
 }
 
 h1, h2, h3, h4 {
-	color: $rosa;
+	color: $preto;
 	margin: 0;
 	padding: 35px 0 10px 0;
 }
@@ -85,8 +93,10 @@ p {
 // 	display: none;
 // }
 
-//FICHA TÉCNICA
-
+//FICHA TÉCNICA//
+#fichatecnica {
+	padding-bottom: 0;
+}
 
 .fichalivro {
 		h3 {
@@ -95,6 +105,16 @@ p {
 	& > div {
 		width: 48%;
 		float: left;
+	}
+}
+
+//ISBN//
+
+#linha {
+	border-top: 2px solid $cinzaescuro;
+	padding-top: 70px;
+	p {
+		font-size: 0.8em;
 	}
 }
 
@@ -122,21 +142,29 @@ a.iniciarebook {
 	display: none;
 }
 
-// #link {
-// 	display: none;
-// }
 
-#linha {
-	display: none;
-}
-
-//Header conteudo
+//HEADER CONTEUDO//
 
 .headerconteudo {
-	display: none;
-}
+	padding: 15px 0;
+	width: 100%;
+	height: 140px;
+	background-size: cover;
+	background-position: center top;
+	display: inline-block;
+	span {
+		display: none;
+	}
+	h1 {
+		padding-top: 30px;
+		color: $branco;
+	}
+	.botoes {
+		display: none;	
+		}
+	}	
 
-
+//CONTEUDO//
 
 blockquote {
 	font-size: 0.9em;
@@ -169,7 +197,6 @@ figcaption {
 		}
 	}
 
-
 //IMPRIMIR
 
 .print {
@@ -180,22 +207,124 @@ figcaption {
 	display: none;
 }
 
-//DIALOGOS//
-	p.dialogo {
-		margin-left: 100px;
+//LINK//
+a {
+	font-weight: 500;
+}
+
+//IMAGM//
+figcaption {
+font-size: 0.9em;
+}
+
+figure {
+margin: 50px auto 20px auto;
+width: 70%;
+	img {
+	width: 100%;
 	}
+	&.esquerda, &.direita {
+		width: 30%;
+		margin: 0;
+		margin-bottom: 40px;
+	}
+	&.esquerda {
+	float: left;
+	margin-right: 40px;
+	}
+	&.direita {
+	float: right;
+	margin-left: 40px;
+	}
+}
 
+//CITACAO//
+blockquote {
+	font-size: 0.9em;
+	font-style: italic;
+	padding-left: 100px;
+	width: 90%;
+}
 
-// PAGINACAO
-
+//PAGINACAO//
 .pagina {
-	color: #000;
+	color: $cinzaescuro;
 	font-size: 1em;
 	font-style: italic;
 	text-align: right;
 	display: block;
 	border-bottom: 1px solid $cinza;
 	margin-bottom: 30px;
+}
+
+//DIALOGOS//
+p.dialogo {
+	margin-left: 100px;
+}
+
+//BOTOES NOTAS DE RODAPE//
+button.bt-nota{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	background-color: black;
+	color: white;
+	padding: 2px 4px;
+	border-radius: 4px;
+	&:before{
+		content: attr(data-nota);
+	}
+}
+
+//NOTAS DE RODAPE//
+
+#notas-rodape{
+	position: fixed;
+	z-index: 2;
+	right: calc(50% - #{$container / 2});
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: white;
+	width: calc(#{$container * .3} - 3em);
+	max-height: calc(100% - 4em);
+	overflow-y: auto;
+	border: 1px solid;
+	border-top-width: 20px;
+	padding: 1.5em;
+	font-size: .8em;
+	line-height: 1.5;
+	display: none;
+	&.visivel{
+		display: block;
+	}
+	button.fechar{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin-bottom: 1em;
+		width: 1.25em;
+		height: 1.25em;
+		display: block;
+		background-color: transparent;
+		border: none;
+		background-image: url(../img/icon_fechar.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.notas{
+		div{
+			-webkit-hyphens: auto;
+			-ms-hyphens: auto;
+			hyphens: auto;
+			display: none;
+			text-align: justify;
+			&.atual{
+				display: block;
+			}
+		}
+	}
 }
 
 //LISTA 
