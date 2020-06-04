@@ -58,9 +58,11 @@ body {
 				&:before, span { background-color: $rosa; }
 			}
 		}
-
-
+		#notas-rodape {
+			border-color: $rosa; 
+		}
 	}
+
 
 	&.livro2 {
 		article {
@@ -100,6 +102,9 @@ body {
 			p.paginasumario {
 				&:before, span { background-color: $roxo; }
 			}
+		}
+		#notas-rodape {
+			border-color: $roxo; 
 		}
 	}
 }

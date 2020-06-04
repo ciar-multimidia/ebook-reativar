@@ -108,28 +108,33 @@ article {
 
 	//IMAGM//
 	figcaption {
-		font-size: 0.9em;
+	font-size: 0.9em;
 	}
 
 	figure {
-		margin: 50px 0 20px 0;
+	margin: 50px 0 20px 0;
 		img {
-			width: 100%;	
+		width: 70%;
 		}
 		&.esquerda, &.direita {
-			margin: 0;
-			width: 30%;
-			margin-bottom: 40px;
+		margin: 0;
+		margin-bottom: 40px;
+		img {width: 100%;}
 		}
 		&.esquerda {
-			float: left;
-			margin-right: 40px;
+		float: left;
+		margin-right: 40px;
 		}
 		&.direita {
-			float: right;
-			margin-left: 40px;
+		float: right;
+		margin-left: 40px;
 		}
 	}
+
+
+
+
+
 
 	//CITACAO//
 	blockquote {
@@ -181,11 +186,12 @@ article {
 	top: 50%;
 	transform: translateY(-50%);
 	background-color: white;
-	width: calc(#{$container * .3} - 1em);
+	width: calc(#{$container * .3} - 3em);
 	max-height: calc(100% - 4em);
 	overflow-y: auto;
 	border: 1px solid;
-	padding: 1em;
+	border-top-width: 20px;
+	padding: 1.5em;
 	font-size: .8em;
 	line-height: 1.5;
 	display: none;
@@ -209,6 +215,9 @@ article {
 
 	.notas{
 		div{
+			-webkit-hyphens: auto;
+			-ms-hyphens: auto;
+			hyphens: auto;
 			display: none;
 			text-align: justify;
 			&.atual{

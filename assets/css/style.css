@@ -286,6 +286,9 @@ body.livro1 .footerconteudo .container a.proximo, body.livro1 .footerconteudo .c
 body.livro1 .listasumario p.paginasumario:before, body.livro1 .listasumario p.paginasumario span {
   background-color: #b20f62;
 }
+body.livro1 #notas-rodape {
+  border-color: #b20f62;
+}
 body.livro2 article h1, body.livro2 article h2, body.livro2 article h3, body.livro2 article h4, body.livro2 article h5 {
   color: #821f81;
 }
@@ -322,6 +325,9 @@ body.livro2 .footerconteudo .container a.proximo, body.livro2 .footerconteudo .c
 }
 body.livro2 .listasumario p.paginasumario:before, body.livro2 .listasumario p.paginasumario span {
   background-color: #821f81;
+}
+body.livro2 #notas-rodape {
+  border-color: #821f81;
 }
 
 .headerportal {
@@ -605,12 +611,14 @@ article figure {
   margin: 50px 0 20px 0;
 }
 article figure img {
-  width: 100%;
+  width: 70%;
 }
 article figure.esquerda, article figure.direita {
   margin: 0;
-  width: 30%;
   margin-bottom: 40px;
+}
+article figure.esquerda img, article figure.direita img {
+  width: 100%;
 }
 article figure.esquerda {
   float: left;
@@ -660,11 +668,12 @@ article button.bt-nota:before {
   top: 50%;
   transform: translateY(-50%);
   background-color: white;
-  width: calc(354px - 1em);
+  width: calc(354px - 3em);
   max-height: calc(100% - 4em);
   overflow-y: auto;
   border: 1px solid;
-  padding: 1em;
+  border-top-width: 20px;
+  padding: 1.5em;
   font-size: 0.8em;
   line-height: 1.5;
   display: none;
@@ -687,6 +696,9 @@ article button.bt-nota:before {
   background-repeat: no-repeat;
 }
 #notas-rodape .notas div {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   display: none;
   text-align: justify;
 }
@@ -915,6 +927,10 @@ footer {
   }
 
   footer {
+    display: none;
+  }
+
+  .footer_capas {
     display: none;
   }
 
