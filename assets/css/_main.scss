@@ -112,14 +112,15 @@ article {
 	}
 
 	figure {
-	margin: 50px 0 20px 0;
+	margin: 50px auto 20px auto;
+	width: 70%;
 		img {
-		width: 70%;
+		width: 100%;
 		}
 		&.esquerda, &.direita {
-		margin: 0;
-		margin-bottom: 40px;
-		img {width: 100%;}
+			width: 30%;
+			margin: 0;
+			margin-bottom: 40px;
 		}
 		&.esquerda {
 		float: left;

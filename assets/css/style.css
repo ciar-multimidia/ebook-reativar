@@ -608,17 +608,16 @@ article figcaption {
   font-size: 0.9em;
 }
 article figure {
-  margin: 50px 0 20px 0;
-}
-article figure img {
+  margin: 50px auto 20px auto;
   width: 70%;
 }
+article figure img {
+  width: 100%;
+}
 article figure.esquerda, article figure.direita {
+  width: 30%;
   margin: 0;
   margin-bottom: 40px;
-}
-article figure.esquerda img, article figure.direita img {
-  width: 100%;
 }
 article figure.esquerda {
   float: left;
