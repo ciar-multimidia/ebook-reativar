@@ -280,21 +280,18 @@ button.bt-nota{
 //NOTAS DE RODAPE//
 
 #notas-rodape{
-	position: fixed;
-	z-index: 2;
-	right: calc(50% - #{$container / 2});
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: white;
-	width: calc(#{$container * .3} - 3em);
-	max-height: calc(100% - 4em);
-	overflow-y: auto;
+	position: static;
+	transform: none;
+	background-color: transparent;
+	width: 100%;
+	max-height: none;
+	overflow-y: visible;
 	border: 1px solid;
 	border-top-width: 20px;
 	padding: 1.5em;
 	font-size: .8em;
 	line-height: 1.5;
-	display: none;
+	display: block;
 	&.visivel{
 		display: block;
 	}
@@ -318,7 +315,7 @@ button.bt-nota{
 			-webkit-hyphens: auto;
 			-ms-hyphens: auto;
 			hyphens: auto;
-			display: none;
+			display: block;
 			text-align: justify;
 			&.atual{
 				display: block;
@@ -326,6 +323,7 @@ button.bt-nota{
 		}
 	}
 }
+
 
 //LISTA 
 

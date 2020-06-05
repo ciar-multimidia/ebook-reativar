@@ -1010,21 +1010,18 @@ footer {
   }
 
   #notas-rodape {
-    position: fixed;
-    z-index: 2;
-    right: calc(50% - 590px);
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    width: calc(354px - 3em);
-    max-height: calc(100% - 4em);
-    overflow-y: auto;
+    position: static;
+    transform: none;
+    background-color: transparent;
+    width: 100%;
+    max-height: none;
+    overflow-y: visible;
     border: 1px solid;
     border-top-width: 20px;
     padding: 1.5em;
     font-size: 0.8em;
     line-height: 1.5;
-    display: none;
+    display: block;
   }
   #notas-rodape.visivel {
     display: block;
@@ -1047,7 +1044,7 @@ footer {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    display: none;
+    display: block;
     text-align: justify;
   }
   #notas-rodape .notas div.atual {
