@@ -33,8 +33,19 @@ body {
 			}
 		}
 		.fichalivro h3 { color: $rosa; }
+		.headerindex { background-image: url(../img/bg_index1.svg); }
+		.tituloum { img { width: 300px; } }
 		.headerconteudo {
 			background-image: url(../img/topobg1.svg);
+		}
+		.botoes_index {
+			a { 	
+				background-color: $rosa;
+				&:hover {
+					color: $rosa;
+					background-color: $branco;
+				}
+			}
 		}
 		a.iniciarebook {
 			background: $rosa;
@@ -80,7 +91,18 @@ body {
 			}
 		}
 		.fichalivro h3 { color: $roxo; }
+		.headerindex { background-image: url(../img/bg_index2.svg); }
+		.tituloum { img { width: 500px; } }
 		.headerconteudo { background-image: url(../img/topobg2.svg); }
+		.botoes_index {
+			a { 	
+				background-color: $roxo;
+				&:hover {
+					color: $roxo;
+					background-color: $branco;
+				}
+			}
+		}
 		a.iniciarebook {
 			background: $roxo;
 			border-color: $roxo;

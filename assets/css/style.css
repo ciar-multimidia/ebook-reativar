@@ -261,8 +261,21 @@ body.livro1 article button.bt-nota.atual {
 body.livro1 .fichalivro h3 {
   color: #b20f62;
 }
+body.livro1 .headerindex {
+  background-image: url(../img/bg_index1.svg);
+}
+body.livro1 .tituloum img {
+  width: 300px;
+}
 body.livro1 .headerconteudo {
   background-image: url(../img/topobg1.svg);
+}
+body.livro1 .botoes_index a {
+  background-color: #b20f62;
+}
+body.livro1 .botoes_index a:hover {
+  color: #b20f62;
+  background-color: #FFF;
 }
 body.livro1 a.iniciarebook {
   background: #b20f62;
@@ -301,8 +314,21 @@ body.livro2 article button.bt-nota.atual {
 body.livro2 .fichalivro h3 {
   color: #821f81;
 }
+body.livro2 .headerindex {
+  background-image: url(../img/bg_index2.svg);
+}
+body.livro2 .tituloum img {
+  width: 500px;
+}
 body.livro2 .headerconteudo {
   background-image: url(../img/topobg2.svg);
+}
+body.livro2 .botoes_index a {
+  background-color: #821f81;
+}
+body.livro2 .botoes_index a:hover {
+  color: #821f81;
+  background-color: #FFF;
 }
 body.livro2 a.iniciarebook {
   background: #821f81;
@@ -419,7 +445,6 @@ body.livro2 #notas-rodape {
 .headerindex {
   width: 100%;
   min-height: 100vh;
-  background-image: url(../img/bg_index1.svg);
   background-size: cover;
   background-position: center top;
 }
@@ -429,7 +454,6 @@ body.livro2 #notas-rodape {
   display: block;
 }
 .tituloum img {
-  width: 300px;
   display: block;
   margin: 0 auto;
 }
@@ -462,7 +486,6 @@ body.livro2 #notas-rodape {
 }
 .botoes_index a {
   font-family: "Raleway", sans-serif;
-  background-color: #b20f62;
   font-weight: bold;
   display: inline-block;
   color: #FFF;
@@ -474,10 +497,6 @@ body.livro2 #notas-rodape {
   text-align: center;
   vertical-align: middle;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-.botoes_index a:hover {
-  color: #b20f62;
-  background-color: #FFF;
 }
 .botoes_index a span {
   display: inline-block;
