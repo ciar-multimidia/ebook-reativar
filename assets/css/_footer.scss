@@ -32,7 +32,8 @@ footer {
 .footerconteudo .container {
 	display: block;
 	text-align: center;
-	padding: 15px 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	a.proximo, a.anterior {
 		color: $branco;
 		border-radius: 50%;

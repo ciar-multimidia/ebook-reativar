@@ -1,0 +1,158 @@
+@media screen and (max-width: $container) {
+	article {
+		width: 600px;
+		max-width: 100%;
+		margin: 0 auto;
+		font-size: 15px;
+		text-align: justify;
+		-webkit-hyphens: auto;
+		-ms-hyphens: auto;
+		hyphens: auto;
+		padding: 30px 0;
+		figure {
+			&, &.esquerda, &.direita {
+				width: 100%;
+				margin: 20px auto 20px auto;
+				float: none;
+			}
+		}
+		p.dialogo {
+		margin-left: 30px;
+	}
+	}
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#notas-rodape {
+		right: 15px;
+		top: auto;
+		bottom: 15px;
+		left: 15px;
+		transform: none;
+		width: auto;
+		max-height: 200px;
+		border: 1px solid;
+		border-top-width: 8px;
+		border-bottom-width: 4px;
+		padding: 1em;
+		font-size: .7em;
+		button.fechar {
+			margin-bottom: 0.5em;
+			width: 1em;
+			height: 1em;
+		}
+	}
+
+	.listasumario {
+	li {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+		a {
+			p.titulo {
+				margin: 0 0 0 0;
+				}
+			}
+		}
+
+	}
+
+	.headerconteudo {
+	h1 {
+		font-size: 1.5em;
+		padding-top: 14px;
+		padding-right: 40px;
+	}
+	.botoes {
+		margin-top: -63px;	
+		.menu {
+		width: 25px;	
+		}
+		.print {
+		display: none;
+		}
+	}	
+}
+
+.release {
+	margin: 30px auto;
+	width: 600px;
+	max-width: 100%;
+	font-size: 15px;
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+
+.headerportal {
+	padding: 0 15px; 
+	.marcas {
+	max-width: 100%;
+	margin-top: 50px;
+	padding-bottom: 15px;
+	img { width: 100%; }
+	}
+}
+
+.titulo_portal {
+	padding-bottom: 20px;
+}
+
+.botoes_portal {
+	display: block;
+	text-align: center;
+	a { 	
+		width: 230px;
+		height: 230px;
+		margin: 20px 10px 0 10px;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: middle;
+
+		&:nth-child(1) {
+			svg {
+				margin-top: 45px;
+				path {
+					fill: $roxo;
+				}
+			}
+			&:hover {
+			background: $roxo;
+			}
+		}
+		&:nth-child(2) {
+			svg {
+				margin-top: 45px;
+				path {
+					fill: $turquesa;
+				}
+			}
+			&:hover {
+			background: $turquesa;
+			}
+		}
+		svg {
+			width: 75%;
+			display: inline-block;
+			position: relative;
+			
+			path {
+				transition: fill 0.2s ease-in-out;
+			}
+		}
+		&:hover {
+			svg path{
+				fill: $branco;
+			}
+		}
+	}
+}
+
+			
+
+
+}

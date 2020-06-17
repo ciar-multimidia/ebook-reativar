@@ -24,7 +24,7 @@ $artigo: 800px;
 .container {
 	margin: 0 auto;
 	width: $container;
-	@media (max-width: $container) {
+	@media screen and (max-width: $container) {
 		width: 100%;
 	}
 }

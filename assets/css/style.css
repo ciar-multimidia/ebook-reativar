@@ -110,7 +110,7 @@ img {
   margin: 0 auto;
   width: 1180px;
 }
-@media (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
   .container {
     width: 100%;
   }
@@ -765,7 +765,8 @@ footer {
 .footerconteudo .container {
   display: block;
   text-align: center;
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .footerconteudo .container a.proximo, .footerconteudo .container a.anterior {
   color: #FFF;
@@ -789,303 +790,6 @@ footer {
   cursor: pointer;
 }
 
-@media print {
-  @page {
-    margin-top: 2cm;
-    margin-left: 1.5cm;
-    margin-right: 2.5cm;
-    margin-bottom: 2.5cm;
-  }
-  article {
-    width: 100%;
-    padding-top: 0;
-  }
-
-  h1, h2, h3, h4 {
-    color: #212121;
-    margin: 0;
-    padding: 35px 0 10px 0;
-  }
-
-  h1 {
-    font-size: 1.3em;
-    padding: 0 0 10px 0;
-  }
-
-  h2 {
-    font-size: 1em;
-  }
-
-  p {
-    margin: 0;
-    padding-bottom: 20px;
-    font-size: 0.7em;
-  }
-
-  .headerindex {
-    width: 100%;
-    background-image: url(../img/topo.svg);
-    display: block;
-    padding-bottom: 0;
-  }
-
-  .tituloum {
-    display: block;
-  }
-  .tituloum img {
-    width: 300px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .titulodois {
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    font-size: 2em;
-    color: #821f81;
-    padding-top: 15px;
-    padding-left: 0;
-  }
-
-  .autor {
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    font-size: 0.75em;
-    line-height: 1.4;
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .botoes_index {
-    display: none;
-  }
-
-  #fichatecnica {
-    padding-bottom: 0;
-  }
-
-  .fichalivro h3 {
-    margin-bottom: 1em;
-  }
-  .fichalivro > div {
-    width: 48%;
-    float: left;
-  }
-
-  #linha {
-    border-top: 2px solid #aaaaaa;
-    padding-top: 70px;
-  }
-  #linha p {
-    font-size: 0.8em;
-  }
-
-  .isbn {
-    border: 1px solid #aaaaaa;
-    padding: 25px;
-    width: 70%;
-    margin: 0 auto 15px auto;
-  }
-  .isbn .dados {
-    width: 60px;
-    float: left;
-  }
-  .isbn .info {
-    float: right;
-    width: calc(100% - 60px);
-  }
-
-  .marcas {
-    width: 400px;
-    margin: 50px auto 50px auto;
-  }
-
-  a.iniciarebook {
-    display: none;
-  }
-
-  .headerconteudo {
-    padding: 15px 0;
-    width: 100%;
-    height: 140px;
-    background-size: cover;
-    background-position: center top;
-    display: inline-block;
-  }
-  .headerconteudo span {
-    display: none;
-  }
-  .headerconteudo h1 {
-    padding-top: 30px;
-    color: #FFF;
-  }
-  .headerconteudo .botoes {
-    display: none;
-  }
-
-  blockquote {
-    font-size: 0.9em;
-    font-style: italic;
-    padding-left: 100px;
-    width: 90%;
-  }
-
-  figcaption {
-    font-size: 0.9em;
-  }
-
-  figure {
-    margin: 50px 0 20px 0;
-  }
-  figure img {
-    width: 100%;
-  }
-  figure.esquerda, figure.direita {
-    margin: 0;
-    width: 30%;
-    margin-bottom: 40px;
-  }
-  figure.esquerda {
-    float: left;
-    margin-right: 40px;
-  }
-  figure.direita {
-    float: right;
-    margin-left: 40px;
-  }
-
-  .print {
-    display: none;
-  }
-
-  .printindex {
-    display: none;
-  }
-
-  a {
-    font-weight: 500;
-  }
-
-  figcaption {
-    font-size: 0.9em;
-  }
-
-  figure {
-    margin: 50px auto 20px auto;
-    width: 70%;
-  }
-  figure img {
-    width: 100%;
-  }
-  figure.esquerda, figure.direita {
-    width: 30%;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-  figure.esquerda {
-    float: left;
-    margin-right: 40px;
-  }
-  figure.direita {
-    float: right;
-    margin-left: 40px;
-  }
-
-  blockquote {
-    font-size: 0.9em;
-    font-style: italic;
-    padding-left: 100px;
-    width: 90%;
-  }
-
-  .pagina {
-    color: #aaaaaa;
-    font-size: 1em;
-    font-style: italic;
-    text-align: right;
-    display: block;
-    border-bottom: 1px solid #f6f6f6;
-    margin-bottom: 30px;
-  }
-
-  p.dialogo {
-    margin-left: 100px;
-  }
-
-  button.bt-nota {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 2px 4px;
-    border-radius: 4px;
-  }
-  button.bt-nota:before {
-    content: attr(data-nota);
-  }
-
-  #notas-rodape {
-    position: static;
-    transform: none;
-    background-color: transparent;
-    width: 100%;
-    max-height: none;
-    overflow-y: visible;
-    border: 1px solid;
-    border-top-width: 20px;
-    padding: 1.5em;
-    font-size: 0.8em;
-    line-height: 1.5;
-    display: block;
-  }
-  #notas-rodape.visivel {
-    display: block;
-  }
-  #notas-rodape button.fechar {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin-bottom: 1em;
-    width: 1.25em;
-    height: 1.25em;
-    display: block;
-    background-color: transparent;
-    border: none;
-    background-image: url(../img/icon_fechar.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  #notas-rodape .notas div {
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    display: block;
-    text-align: justify;
-  }
-  #notas-rodape .notas div.atual {
-    display: block;
-  }
-
-  li {
-    padding-bottom: 15px;
-  }
-
-  footer {
-    display: none;
-  }
-
-  .footer_capas {
-    display: none;
-  }
-
-  .footerconteudo {
-    display: none;
-  }
-}
 .listasumario {
   width: 100%;
   display: block;
@@ -1135,6 +839,147 @@ footer {
 .listasumario li a p.titulo {
   color: #706f6f;
   margin: 10px 0 0 0;
+}
+
+@media screen and (max-width: 1180px) {
+  article {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    padding: 30px 0;
+  }
+  article figure, article figure.esquerda, article figure.direita {
+    width: 100%;
+    margin: 20px auto 20px auto;
+    float: none;
+  }
+  article p.dialogo {
+    margin-left: 30px;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #notas-rodape {
+    right: 15px;
+    top: auto;
+    bottom: 15px;
+    left: 15px;
+    transform: none;
+    width: auto;
+    max-height: 200px;
+    border: 1px solid;
+    border-top-width: 8px;
+    border-bottom-width: 4px;
+    padding: 1em;
+    font-size: 0.7em;
+  }
+  #notas-rodape button.fechar {
+    margin-bottom: 0.5em;
+    width: 1em;
+    height: 1em;
+  }
+
+  .listasumario li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .listasumario li a p.titulo {
+    margin: 0 0 0 0;
+  }
+
+  .headerconteudo h1 {
+    font-size: 1.5em;
+    padding-top: 14px;
+    padding-right: 40px;
+  }
+  .headerconteudo .botoes {
+    margin-top: -63px;
+  }
+  .headerconteudo .botoes .menu {
+    width: 25px;
+  }
+  .headerconteudo .botoes .print {
+    display: none;
+  }
+
+  .release {
+    margin: 30px auto;
+    width: 600px;
+    max-width: 100%;
+    font-size: 15px;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .headerportal {
+    padding: 0 15px;
+  }
+  .headerportal .marcas {
+    max-width: 100%;
+    margin-top: 50px;
+    padding-bottom: 15px;
+  }
+  .headerportal .marcas img {
+    width: 100%;
+  }
+
+  .titulo_portal {
+    padding-bottom: 20px;
+  }
+
+  .botoes_portal {
+    display: block;
+    text-align: center;
+  }
+  .botoes_portal a {
+    width: 230px;
+    height: 230px;
+    margin: 20px 10px 0 10px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .botoes_portal a:nth-child(1) svg {
+    margin-top: 45px;
+  }
+  .botoes_portal a:nth-child(1) svg path {
+    fill: #821f81;
+  }
+  .botoes_portal a:nth-child(1):hover {
+    background: #821f81;
+  }
+  .botoes_portal a:nth-child(2) svg {
+    margin-top: 45px;
+  }
+  .botoes_portal a:nth-child(2) svg path {
+    fill: #02969c;
+  }
+  .botoes_portal a:nth-child(2):hover {
+    background: #02969c;
+  }
+  .botoes_portal a svg {
+    width: 75%;
+    display: inline-block;
+    position: relative;
+  }
+  .botoes_portal a svg path {
+    transition: fill 0.2s ease-in-out;
+  }
+  .botoes_portal a:hover svg path {
+    fill: #FFF;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
