@@ -16,6 +16,11 @@
 				float: none;
 			}
 		}
+		p {
+			-webkit-hyphens: auto;
+			-ms-hyphens: auto;
+			hyphens: auto;
+		}
 		p.dialogo {
 		margin-left: 30px;
 	}

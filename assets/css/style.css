@@ -860,6 +860,11 @@ footer {
     margin: 20px auto 20px auto;
     float: none;
   }
+  article p {
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
   article p.dialogo {
     margin-left: 30px;
   }
