@@ -151,8 +151,46 @@
 		}
 	}
 }
-
 			
+.headerindex {
+	padding: 0 15px;
+}
 
+.tituloum {
+	img { 
+		width: 100%;
+	}
+}
+
+.titulodois {
+	font-size: 1em;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.botoes_index {
+	a { 	
+		margin: 15px 20px 30px 15px;
+	}
+}
+
+.fichalivro {
+	div {
+	width: 100%;
+	float: none;
+	}
+}
+
+#linha {
+	.marcas {
+		max-width: 100%;
+		padding-bottom: 15px;
+		img { width: 100%; }
+	}
+}
+
+.isbn {
+	width: 100%;
+}
 
 }

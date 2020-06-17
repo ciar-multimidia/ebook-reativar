@@ -110,6 +110,7 @@
 	padding-top: 100px;
 	display: block;
 	img { 
+		max-width: 100%;
 		display: block;
 		margin: 0 auto;
 	}
@@ -147,7 +148,7 @@
 		color: $branco;
 		width: 90px;
 		height: 90px;
-		margin: 30px 20px 0 30px;
+		margin: 30px 20px 60px 30px;
 		font-size: 0.75em;
 		border-radius: 50%;
 		text-align: center;
