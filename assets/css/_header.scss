@@ -176,18 +176,20 @@
 	background-position: center top;
 	display: inline-block;
 	span {
+		display: block;
+		margin-bottom: 30px;
 		font-family: Arial, sans-serif;
 		font-size: 0.6em;
 		color: $branco;
 	}
 	h1 {
-		padding-top: 30px;
+		// padding-top: 30px;
 		color: $branco;
 	}
 	.botoes {
 		float: right;
-		padding-bottom: 50px;
-		margin-top: -38px;	
+		// padding-bottom: 50px;
+		// margin-top: -38px;	
 		.menu {
 		display: inline-block;
 		width: 30px;	

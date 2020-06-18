@@ -16,11 +16,6 @@
 				float: none;
 			}
 		}
-		p {
-			-webkit-hyphens: auto;
-			-ms-hyphens: auto;
-			hyphens: auto;
-		}
 		p.dialogo {
 		margin-left: 30px;
 	}
@@ -66,13 +61,14 @@
 	}
 
 	.headerconteudo {
+	span {
+		margin-bottom: 15px;
+	}
 	h1 {
 		font-size: 1.5em;
-		padding-top: 14px;
 		padding-right: 40px;
 	}
 	.botoes {
-		margin-top: -63px;	
 		.menu {
 		width: 25px;	
 		}

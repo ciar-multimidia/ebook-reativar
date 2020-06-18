@@ -514,18 +514,17 @@ body.livro2 #notas-rodape {
   display: inline-block;
 }
 .headerconteudo span {
+  display: block;
+  margin-bottom: 30px;
   font-family: Arial, sans-serif;
   font-size: 0.6em;
   color: #FFF;
 }
 .headerconteudo h1 {
-  padding-top: 30px;
   color: #FFF;
 }
 .headerconteudo .botoes {
   float: right;
-  padding-bottom: 50px;
-  margin-top: -38px;
 }
 .headerconteudo .botoes .menu {
   display: inline-block;
@@ -860,11 +859,6 @@ footer {
     margin: 20px auto 20px auto;
     float: none;
   }
-  article p {
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  }
   article p.dialogo {
     margin-left: 30px;
   }
@@ -904,13 +898,12 @@ footer {
     margin: 0 0 0 0;
   }
 
+  .headerconteudo span {
+    margin-bottom: 15px;
+  }
   .headerconteudo h1 {
     font-size: 1.5em;
-    padding-top: 14px;
     padding-right: 40px;
-  }
-  .headerconteudo .botoes {
-    margin-top: -63px;
   }
   .headerconteudo .botoes .menu {
     width: 25px;
