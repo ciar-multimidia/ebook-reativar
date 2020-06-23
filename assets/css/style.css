@@ -517,11 +517,11 @@ body.livro2 #notas-rodape {
   display: block;
   margin-bottom: 50px;
   font-family: Arial, sans-serif;
-  font-size: 0.6em;
+  font-size: 1em;
   color: #FFF;
 }
 .headerconteudo h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: #FFF;
 }
 .headerconteudo .botoes {
@@ -903,6 +903,7 @@ footer {
     height: 140px;
   }
   .headerconteudo span {
+    font-size: 0.6em;
     margin-bottom: 15px;
   }
   .headerconteudo h1 {
