@@ -508,19 +508,20 @@ body.livro2 #notas-rodape {
 .headerconteudo {
   padding: 15px 0;
   width: 100%;
-  height: 140px;
+  height: 200px;
   background-size: cover;
   background-position: center top;
   display: inline-block;
 }
 .headerconteudo span {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-family: Arial, sans-serif;
   font-size: 0.6em;
   color: #FFF;
 }
 .headerconteudo h1 {
+  font-size: 2.5em;
   color: #FFF;
 }
 .headerconteudo .botoes {
@@ -898,6 +899,9 @@ footer {
     margin: 0 0 0 0;
   }
 
+  .headerconteudo {
+    height: 140px;
+  }
   .headerconteudo span {
     margin-bottom: 15px;
   }
