@@ -29,6 +29,13 @@ footer {
 
 //FOOTER CONTEUDO//
 
+.footerconteudo {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
 .footerconteudo .container {
 	display: block;
 	text-align: center;

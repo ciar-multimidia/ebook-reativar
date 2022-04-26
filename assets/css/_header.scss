@@ -79,6 +79,17 @@
 			background: $turquesa;
 			}
 		}
+		&:nth-child(3) {
+			svg {
+				margin-top: 45px;
+				path {
+					fill: $azul;
+				}
+			}
+			&:hover {
+			background: $azul;
+			}
+		}
 		svg {
 			width: 75%;
 			display: inline-block;

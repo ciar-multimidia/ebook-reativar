@@ -129,6 +129,61 @@ body {
 			border-color: $roxo; 
 		}
 	}
+
+		&.livro3 {
+		article {
+			h1, h2, h3, h4, h5 {
+				color: $azul;
+			}
+		p.dialogo {
+				color: $azul;
+			}
+
+			button.bt-nota{
+				&.atual{
+					background-color: $azul;
+				}
+			}
+		}
+		.fichalivro h3 { color: $azul; }
+		.headerindex { background-image: url(../img/bg_index3.svg); }
+		.tituloum { img { width: 500px; } }
+		.headerconteudo { background-image: url(../img/topobg3.svg); }
+		.botoes_index {
+			a { 	
+				background-color: $laranja;
+				&:hover {
+					color: $laranja;
+					background-color: $branco;
+				}
+			}
+		}
+		a.iniciarebook {
+			background: $azul;
+			border-color: $azul;
+			&:hover { color: $azul !important; }
+			&:before { background: $azul; }
+		}
+		.footerconteudo .container { 
+			a.sumariofooter { 
+				color: $azul; 
+				&:hover { 
+					color: $laranja;
+				}
+			}
+			a.proximo, a.anterior {
+				background-color: $azul
+			}
+		}
+		.listasumario {
+			p.paginasumario {
+				&:before, span { background-color: $azul; }
+			}
+		}
+		#notas-rodape {
+			border-color: $azul; 
+		}
+	}
 }
 
 @import "header";

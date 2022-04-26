@@ -180,7 +180,7 @@ article {
 #notas-rodape{
 	position: fixed;
 	z-index: 2;
-	right: calc(50% - #{$container / 2});
+	right: calc($container / 2);
 	top: 50%;
 	transform: translateY(-50%);
 	background-color: white;
