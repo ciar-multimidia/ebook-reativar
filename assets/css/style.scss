@@ -135,7 +135,15 @@ body {
 			h1, h2, h3, h4, h5 {
 				color: $azul;
 			}
-		p.dialogo {
+			.contracapa {
+				&:before {
+				background-color: $laranja;
+				}
+				hr {
+					background-color: $laranja;
+				}
+			}
+			p.dialogo {
 				color: $azul;
 			}
 
